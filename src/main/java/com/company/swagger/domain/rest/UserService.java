@@ -15,7 +15,7 @@ import com.wordnik.swagger.annotations.ApiOperation;
 import com.wordnik.swagger.annotations.ApiParam;
 
 /**
- * @author joseph.phillips
+ * @author <a href="
  *
  */
 @Path("/user")
