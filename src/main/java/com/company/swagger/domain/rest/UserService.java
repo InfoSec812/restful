@@ -8,8 +8,8 @@ import javax.ws.rs.Path;
 import javax.ws.rs.PathParam;
 import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
+import javax.ws.rs.core.Response;
 
-import com.company.swagger.domain.entity.User;
 import com.wordnik.swagger.annotations.Api;
 import com.wordnik.swagger.annotations.ApiOperation;
 import com.wordnik.swagger.annotations.ApiParam;
@@ -26,6 +26,6 @@ public interface UserService {
 	@GET
 	@Path("/id/{id: [0-9]*}")
 	@ApiOperation(value="Get the user for the given unique user ID")
-	public User getUserById(
+	public Response getUserById(
 			@ApiParam(value="The unique ID of this user account") @PathParam(value="id") Long id) ;
 }
